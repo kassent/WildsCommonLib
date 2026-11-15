@@ -36,6 +36,7 @@ source_group("lua" FILES ${LUA_SOURCES})
 
 # 创建静态库
 add_library(common_lib STATIC ${COMMON_SOURCES} ${LUA_SOURCES})
+target_compile_features(common_lib PUBLIC cxx_std_23)
 
 # 设置包含目录
 target_include_directories(common_lib
@@ -52,6 +53,7 @@ target_link_libraries(common_lib
         spdlog::spdlog_header_only
         fmt::fmt
         nlohmann_json::nlohmann_json
+        ZLIB::ZLIB
 )
 
 if(MSVC)
