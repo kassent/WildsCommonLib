@@ -1,0 +1,26 @@
+{
+  "upstream": "https://github.com/kassent/mhwilds",
+  "sourceCommit": "85aaed8c5fb8a6aa8351fcf9485436d8f66f4cb9",
+  "files": {
+    "include/BranchTrampoline.h": "2f70c378baa267f1ac56ccf56245cfb8c6d32f370dd655e2432d1284201413ef",
+    "include/cNetHttpRequest.h": "12e996d290fee03a30c49301ededf5ceec223a15abfa12f69c44aa7717b13f9f",
+    "include/ConfigUtils.h": "3cb0c2ed95970a87ac1134692d2e09c72c914a9f05ad905160310403d9506853",
+    "include/FileUtils.h": "ddd5e1c5cfeb1f7222a0a0f9503d146eab75fa17a73a5660cf93a9a6591af84c",
+    "include/GameTypes.h": "949709717c8bd08739483ea0c82bf9eeb31b661de7eec0e99349e301be507648",
+    "include/HookUtils.h": "0286e913d359b52b0bf0ec4ca070c89174364c99b117b781cbaf1826d2387b0c",
+    "include/LogUtils.h": "3634f99186105c2a7152491a8ea351e5e4e3c148e58b4983938b0c44fe752dc7",
+    "include/safetyhook.hpp": "6c5332d9a426c3c285c3689eb270298e6c37defc5eb843d78630935d009cb941",
+    "include/Zydis.h": "3bdb00d1a3a5a21b2084cd0508c992d83c9d5a374a4a984782d266e77d64a8c7",
+    "src/BranchTrampoline.cpp": "3f0bb56067505814cee4afe876f5b6fd144a745acd9a8cf0e504927cea94b6cf",
+    "src/cNetHttpRequest.cpp": "12bfe1f27e704289a1dfe0b72e1b7020e26845350137424073339219c22967fb",
+    "src/ConfigUtils.cpp": "6e08c06f0e15684e61014e781fa347eb9afdaccb35f007446be30119a8cf45e3",
+    "src/FileUtils.cpp": "f6ab6ba2bc88540f2d2785e21f2810cdae4153c3c98ea51a9f386466793e891c",
+    "src/GameTypes.cpp": "28e5abd30ae1c5e27e5cae148dddc596ee14574cbfb5ab571c18c4261657ed26",
+    "src/HookUtils.cpp": "3aa32b751e93d88801db9036b63eac016beb7bdfb246eecb5986b3d26bd7b9c3",
+    "src/LogUtils.cpp": "688b4bf02d509fbd021f86e0000fc6f631df2882945f389678056b039cd88b5e",
+    "src/safetyhook.cpp": "fb7707d477239b7a020dd50eaf959c1d34fdc79e4a9d1672d2a61fc8a1017420",
+    "src/Zydis.c": "6346126cf55d5bd5be8c687220a1c10c6ecf1df861e18c3f6ba293293d7b4fe5",
+    "test/ManagedAllocationTests.cpp": "67b497a3ed98e9cdd90a579671d4147f2eba66f9bc714d5fb810dd25436f413d",
+    "test/ManagedVirtualCallTests.cpp": "cc94cd78bf3158264cbeec716d4ce0c871a3a0068d65eb86dacbcb7dcb4765e0"
+  }
+}
