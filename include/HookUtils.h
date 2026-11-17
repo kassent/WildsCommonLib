@@ -39,8 +39,9 @@ namespace HookUtils {
 	// Returns the address of the function pattern, or nullptr if not found
 	// func: The caller function
 	// signature: The function pattern
-	// scanSize: The size of the scan range
-	uintptr_t LookupFunctionPattern(void *func, std::string_view signature, uint32_t scanSize);
+	// scanSize: Explicit length, or 0 to scan from func to its unwind entry's end.
+	// Without an unwind entry, scans 0x1000 bytes; the caller must ensure that window is readable.
+	uintptr_t LookupFunctionPattern(void *func, std::string_view signature, uint32_t scanSize = 0);
 
 
 	void SafeWriteBuf(uintptr_t addr, void * data, size_t len);

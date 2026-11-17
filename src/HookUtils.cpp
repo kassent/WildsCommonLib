@@ -39,6 +39,12 @@ void *LookupCallee(void *caller, void *callee, bool stopAtCC,
 }
 
 uintptr_t LookupFunctionPattern(void *func, std::string_view signature, uint32_t scanSize) {
+	if (scanSize == 0) {
+		DWORD64 imageBase{};
+		const auto address = reinterpret_cast<uintptr_t>(func);
+		auto* unwind = RtlLookupFunctionEntry(address, &imageBase, nullptr);
+		scanSize = unwind ? uint32_t(imageBase + unwind->EndAddress - address) : 0x1000;
+	}
 	const auto scanner = LightningScanner::Scanner(signature);
 	return (uintptr_t)scanner.Find(func, scanSize).Get<std::byte*>();
 }
